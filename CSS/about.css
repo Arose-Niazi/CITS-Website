@@ -1,0 +1,37 @@
+.heading{
+    text-align: center;
+}
+.parts{
+    background-color: white;
+}
+.part{
+    padding: 60px;
+    height: 100%;
+}
+.text-center{
+    margin-top: 20px;
+}
+.person{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.block{
+    margin-top: 10px;
+    padding: 50px;
+}
+.post{
+    font-weight: 500;
+}
+.block:hover{
+    transform: scale(0.7);
+}
+@media(max-width: 770px){
+    .block{
+        margin-top: 5px;
+        padding: 10px;
+    }
+    .part{
+        padding: 20px;
+    }
+}

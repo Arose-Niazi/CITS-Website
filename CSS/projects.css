@@ -1,0 +1,26 @@
+.content {
+    display: none;
+}
+
+#loadMore {
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.noContent {
+    opacity: 0;
+    pointer-events: none;
+    margin: 0px!important;
+    padding: 0px!important;
+    display: inline;
+}
+.proj-case{
+    width: 100%;
+}

@@ -1,0 +1,115 @@
+.slope{
+    background-image: linear-gradient(176deg, #F4F4F4 20%,  rgb(56, 122, 212) calc(20% + 2px));
+    margin-bottom: -100px;
+    height: 550px;
+    margin-top: 50px;
+    padding-bottom: 90px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 700px auto;
+    grid-gap: 0px; 
+}
+.contact-form{
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    padding: 30px;
+    width: 65%;
+    left: 15%;
+    top: 0;
+    box-shadow: 0 50px 100px -20px rgba(50,50,93,.25) ,0 30px 60px -30px rgba(0,0,0,.3), 0 -18px 60px -10px rgba(0,0,0,.025);
+    display: grid;
+    grid-template-columns: 135px auto;
+    padding: 10px;
+    margin: 30px;
+    margin-top: 0px;
+}
+input[type=text], select, input[type=number], textarea {
+    width: 100%;
+    padding: 5px 30px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc !important ;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+    input[type=text]:invalid{
+      border-color: red;
+    }
+    input,
+    input[type=text]:valid{
+      border-color: #ccc;
+    }
+.grid-item{
+  padding: 10px;
+}
+.Q{
+    color: #373737;
+    opacity: 0.8;
+}
+.btn-sub{
+    position: relative;
+    padding: 5px 20px;
+    left: 63.5%;
+    width: 100px;
+    border-radius: 4px;
+}
+.text-slope{
+    position: relative;
+    top: 20%;
+    color: white;
+}
+.h {
+    color: white;
+    font-size: 0.8em;
+    font-family: cursive;
+    font-weight: bold;
+}
+@media (max-width:1200px){
+    .container{
+        display: grid;
+        grid-template-columns: 700px auto;
+        grid-gap: 0px; 
+    }
+    .contact-form{
+        width: 65%;
+        left: 0%;
+}
+}
+@media (max-width:1000px){
+    .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0px; 
+    }
+    .contact-form{
+        width: 60%;
+        left: 0%;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    .text-slope{
+        margin-left: -200px;
+    }
+}
+@media(max-width:770px){
+    .text-slope{
+        display: none;
+    }
+    .contact-form{
+        width: 100%;
+    }
+}
+@media(max-width:450px){
+    .btn-sub{
+        position: relative;
+        padding: 5px 20px;
+        left: 5%;
+        width: 100px;
+        border-radius: 4px;
+    }
+    .read{
+        width: 30%!important;
+    }
+}

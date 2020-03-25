@@ -1,0 +1,315 @@
+.main-body {
+    display: grid;
+    grid-template-columns: 450px auto;
+}
+
+#circle {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../Images/step1.jpg');
+    border-radius: 50%;
+    border: 5px solid rgb(55,116,201);
+    height: 500px!important;
+    width: 500px;
+    position: relative;
+    left: 20%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sm-cr {
+    background-color: whitesmoke;
+    border: 2px solid rgb(55,116,201);
+    color: #373737;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.sm-cr:hover {
+    transition: 0.3s!important;
+    border-radius: 45%;
+    transform: scale(1.04);
+    background-image: linear-gradient(rgb(55,116,201), rgb(192, 231, 233), whitesmoke, whitesmoke, whitesmoke, whitesmoke, rgb(192, 231, 233), rgb(55,116,201));
+}
+
+.cr-1 {
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.cr-2 {
+    margin-left: 370px;
+    margin-top: 15px;
+}
+
+.cr-3 {
+    margin-left: 445px;
+    margin-top: 200px;
+}
+
+.cr-4 {
+    margin-left: 370px;
+    margin-top: 370px;
+}
+
+.cr-5 {
+    margin-left: 200px;
+    margin-top: 445px;
+}
+
+.cr-6 {
+    margin-left: 15px;
+    margin-top: 370px;
+}
+
+.cr-7 {
+    margin-left: -50px;
+    margin-top: 200px;
+}
+
+.cr-8 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.display-des {
+    position: absolute;
+    top: 25%;
+    padding: 0px 110px;
+    text-align: justify;
+    color: white;
+}
+
+#des {
+    text-align: center;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 250px!important;
+    width: 270px;
+    font-weight: lighter;
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 3.3ch;
+}
+
+.cr-txt {
+    opacity: 0.9;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: 25%;
+    padding: 5px;
+    font-family: cursive;
+}
+
+@media (max-width: 600px) {
+    #circle {
+        display: block;
+        margin-top: 50px;
+        width: 300px;
+        height: 300px!important;
+        margin-top: 50px!important;
+        left: 0%!important;
+    }
+  
+    .main-body {
+        display: block;
+    }
+    .service {
+        padding: 30px;
+        padding-top: 0px;
+    }
+    .cr-1 {
+        margin-left: 110px;
+        margin-top: -40px;
+    }
+    .cr-2 {
+        margin-left: 200px;
+        margin-top: 0px;
+    }
+    .cr-3 {
+        margin-left: 255px;
+        margin-top: 110px;
+    }
+    .cr-4 {
+        margin-left: 200px;
+        margin-top: 220px;
+    }
+    .cr-5 {
+        margin-left: 110px;
+        margin-top: 260px;
+    }
+    .cr-6 {
+        margin-left: 20px;
+        margin-top: 220px;
+    }
+    .cr-7 {
+        margin-left: -35px;
+        margin-top: 110px;
+    }
+    .cr-8 {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .sm-cr {
+        width: 70px;
+        height: 70px;
+    }
+    #des {
+        width: 200px !important;
+        margin-left: -60px !important;
+        height: 130px !important;
+        line-height: 2ch !important;
+        font-weight: 100 !important;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    #des p {
+        font-weight: 100!important;
+    }
+    .cr-txt {
+        font-size: 10px;
+    }
+    .active{
+        transition: 0.3s!important;
+    border-radius: 45%;
+    transform: scale(1.04);
+    background-image: linear-gradient(rgb(55,116,201), rgb(192, 231, 233), whitesmoke, whitesmoke, whitesmoke, whitesmoke, rgb(192, 231, 233), rgb(55,116,201));
+    }
+    .display-des{
+        padding: 0;
+        left: 110px;
+    }
+}
+@media(max-width: 320px){
+    .cr-3 {
+        margin-left: 220px;
+    }
+    .cr-7 {
+        margin-left: -20px;
+    }
+    #circle{
+        width: 280px;
+        left: 0%!important;
+    }
+    #des{
+        margin-left: -75px!important;
+    }
+}
+
+/*
+@media (max-width: 630px) {
+    #circle {
+        border-radius: 50%!important;
+        margin-left: 3%!important;
+    }
+    .cr-1 {
+        margin-left: -5%!important;
+        margin-top: 50px!important;
+    }
+    .cr-2 {
+        margin-left: -5%!important;
+        margin-top: 150px!important;
+    }
+    .cr-3 {
+        margin-left: -5%!important;
+        margin-top: 250px!important;
+    }
+    .cr-4 {
+        margin-left: -5%!important;
+        margin-top: 350px!important;
+    }
+    .cr-5 {
+        margin-left: 85%!important;
+        margin-top: 50px!important;
+    }
+    .cr-6 {
+        margin-left: 85%!important;
+        margin-top: 150px!important;
+    }
+    .cr-7 {
+        margin-left: 85%!important;
+        margin-top: 250px!important;
+    }
+    .cr-8 {
+        margin-left: 85%!important;
+        margin-top: 350px!important;
+    }
+    #des {
+        width: 265px;
+        left: -10%;
+    }
+}*/
+
+@media (max-width: 1160px) {
+    #circle {
+        left: 0%;
+        margin-top: 100px;
+    }
+    .main-body {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-body {
+        grid-template-columns: 350px auto;
+    }
+}
+
+/*
+@media (max-width: 565px) {
+    #circle {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+    }
+    #des {
+        padding: 0px;
+        height: 250px;
+    }
+    .sm-cr {
+        width: 100px;
+    }
+    .cr-1 {margin-left: -15%!important;}
+    .cr-2 {margin-left: -15%!important;}
+    .cr-3 {margin-left: -15%!important;}
+    .cr-4 {margin-left: -15%!important;}
+    .cr-5 {margin-left: 80%!important;}
+    .cr-6 {margin-left: 80%!important;}
+    .cr-7 {margin-left: 80%!important;}
+    .cr-8 {margin-left: 80%!important;}
+    .cr-txt {margin-top: 0px;}
+
+    #des{
+        margin-left: -10%;
+        width: 200px;
+    }
+}*/
+
+/*
+@media (max-width: 440px) {
+    #circle {
+        width: 80%;
+        height: 60%;
+        left: 3%;
+    }
+    .sm-cr {
+        width: 100px;
+    }
+    .cr-5 {margin-left: 85%!important;}
+    .cr-6 {margin-left: 85%!important;}
+    .cr-7 {margin-left: 85%!important;}
+    .cr-8 {margin-left: 85%!important;}
+    .cr-txt {margin-top: 0px!important;}
+
+    #des{
+        margin-left: 40%;
+        width: 150px;
+        line-height: 2ch;
+    }
+    .display-des{padding: 0px}
+}

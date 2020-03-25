@@ -1,0 +1,41 @@
+input[type=text], select, input[type=number], textarea {
+    width: 100%;
+    padding: 5px 30px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc !important ;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    input[type=text]:invalid{
+      border-color: red;
+    }
+    input,
+    input[type=text]:valid{
+      border-color: #ccc;
+    }
+.grid-item{
+  padding: 10px;
+}
+.Q{
+    color: #373737;
+    opacity: 0.8;
+}
+.active{
+  color: rgb(55,116,201);
+}
+.btn-sub{
+    position: relative;
+    padding: 5px 20px;
+    float: right;
+    width: 100px;
+    border-radius: 4px;
+}
+.events{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+    line-height: 2em;
+}
+.req{
+    color: red!important;
+}
+

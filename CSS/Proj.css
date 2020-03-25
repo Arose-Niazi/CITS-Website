@@ -1,0 +1,132 @@
+.proj-img img {
+    width: 40%;
+    height: 350px;
+    float: right;
+    margin: 0px 0px 15px 30px;
+    box-shadow: 0px 2px 4px 0px whitesmoke, 0px -2px 4px 0px whitesmoke;
+}
+.proj-des {
+    text-align: justify;
+}
+
+.date {
+    color: rgb(55,116,201);
+    font-size: 0.6em;
+    font-family: cursive;
+}
+
+.proj-imgs {
+    margin-top: 20px;
+    position: relative;
+    height: 370px;
+}
+
+.img-top {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    right: 40%;
+    top: 8%;
+    z-index: 3;
+    transform: rotate(5deg);
+    box-shadow: 0px 2px 6px 2px whitesmoke, 0px -2px 6px 2px whitesmoke;
+}
+.img-bottom {
+    margin-top: 170px;
+    position: absolute;
+    width: 48%;
+    height: 200px;
+    right: 1%;
+    z-index: 2;
+    box-shadow: 0px 2px 6px 2px whitesmoke, 0px -2px 6px 2px whitesmoke;
+}
+.img-dbottom {
+    margin-top: 0px;
+    position: absolute;
+    width: 48%;
+    height: 200px;
+    right: 1%;
+    z-index: 2;
+    box-shadow: 0px 2px 6px 2px whitesmoke, 0px -2px 6px 2px whitesmoke;
+}
+@media (max-width: 480px){
+    .img-top{
+        left: 46%;
+    }
+    .img-bottom{
+        left: 7%;
+    }
+    .img-dbottom{
+        left: 7%;
+    }
+    .proj-img img{
+        margin: 0px 0px 5px 10px;
+        height: 250px;
+    }
+    
+}
+.more {
+    margin: 30px;
+    padding: 15px 40px;
+    background-color: #F4F4F4;
+    border: 1px solid rgb(15,190,215);
+    color: rgb(55,116,201);
+    transition: 0.5s;
+    width: 225px;
+    text-align: left;
+}
+
+.more img {
+    margin-left: 45px;
+    transition: 0.5s;
+}
+
+.more:hover {
+    color: rgb(15,190,215);
+    border: 1px solid rgb(55,116,201);
+    transition: 0.5s;
+}
+
+.more:hover img {
+    margin-left: 35px;
+    transition: 0.5s;
+}
+
+[data-aos="example1"] {
+    transform: translate(-100px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition: 0.5s;
+}
+
+[data-aos="example1"].aos-animate {
+    transform: rotate(5deg);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+[data-aos="example2"] {
+    transform: translate3d(0, 100px, 0);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition: 0.5s;
+}
+
+[data-aos="example2"].aos-animate {
+    transform: rotate(-10deg);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+[data-aos="example3"] {
+    transform: translate3d(100px, 0, 0);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition: 0.5s;
+}
+
+[data-aos="example3"].aos-animate {
+    transform: rotate(-2deg);
+    opacity: 1;
+    transition: 0.5s;
+}
