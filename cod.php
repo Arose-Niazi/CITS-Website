@@ -62,9 +62,6 @@
 </body>
 
 <!--footer-->
-<div id="footer-placeholder"></div>
-<script>
-    $(function(){
-    $("#footer-placeholder").load("footer.html");
-    });
-</script>
+<?php
+   include('footer.php');
+?>

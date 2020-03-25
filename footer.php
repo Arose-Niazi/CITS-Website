@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="CSS/navFooter.css">
-    <link rel="stylesheet" href="Awesome/css/all.css">
-    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
-</head>
 <footer>
     <div class="fluid-container">
         <div class="footer-sec">
@@ -18,9 +12,9 @@
             </div>
             <div class="left">
                 <span class="footer-heading">Find Us on Social Media</span><br>
-                <a href="https://facebook.com/CITsociety/" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://instagram.com/ctechnologysociety/" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://twitter.com/SocietyComsats" target="_blank"><i class="fa fa-twitter"></i></a>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
             </div>
         </div>
         <div class="bottom">
