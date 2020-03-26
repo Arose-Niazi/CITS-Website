@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="CSS/Theme.css">
   <link rel="stylesheet" href="CSS/maincover.css">
   <script src="JavaScript/Main.js"></script>
-  <script src="JavaScript/testing.js"></script>
 </head>
 
 <!--Navbar-->

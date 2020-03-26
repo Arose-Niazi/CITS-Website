@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <head>
-  <?php
-    include('header.php');
-  ?>
+  
   <link rel="stylesheet" href="CSS/Main.css">
   <link rel="stylesheet" href="CSS/Theme.css">
   <link rel="stylesheet" href="CSS/slick.css">
-  <script src="JavaScript/Main.js"></script>
   <script src="JavaScript/testing.js"></script>
 </head>
 <body style="background-color: #F4F4F4;">
