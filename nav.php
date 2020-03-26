@@ -1,8 +1,8 @@
 <head>
-  <?php
-    include('header.php');
-  ?>
-  </head>
+    <link rel="stylesheet" href="CSS/navFooter.css">
+    <link rel="stylesheet" href="Awesome/css/all.css">
+    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
+</head>
 
 <div class="navbar" id="nav">
   <a class="Logo"><IMG src="Images/logo.png" width="120px" height="50px" /></a>
