@@ -2,7 +2,10 @@
 <head>
 	<?php
     	include('header.php');
-    ?>
+	?>
+	<script src="Ajax/jquery.min.js"></script>
+	<script src="Ajax/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <!--Navbar-->
