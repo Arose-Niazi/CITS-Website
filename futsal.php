@@ -58,7 +58,7 @@
             to save them. If after 3 kicks, scores are same, the shootout goes to "Sudden Death" where in both teams single kicks, if a 
             team scores and saves the other team's kick, they Qualify. Sudden Death continues until a Team Wins.</p>
         <!--Register-->
-        <a href="registeration.html"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
+        <a href="registeration.php"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
         <!--More events-->
         <div class="row">
             <div class="col-md-6">

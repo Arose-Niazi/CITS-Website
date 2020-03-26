@@ -61,7 +61,7 @@
             Last but not the least group pictures of sections are captured and CITS is ready to say Good bye to their beautiful junior 
             guests of the night. </p>
         <!--Register-->
-        <a href="registeration.html"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
+        <a href="registeration.php"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
         <!--More Events-->
         <div class="row">
             <div class="col-md-6">

@@ -56,7 +56,7 @@
             As you know total area of COMSATS is 185 acres, so if your team is energetic one and if you believe you know the campus very 
             well, CITS welcome you to come and take part in treasure hunt and become the next Pirate of Geekspree. </p>
             <!--Register-->
-            <a href="registeration.html"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
+            <a href="registeration.php"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
             <div class="row">
             <div class="col-md-6">
                 <div class="heading text-center" style="font-size: 20px; margin-top: 130px; text-transform: uppercase">

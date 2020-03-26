@@ -6,12 +6,9 @@
 </head>
 
 <!--Navbar-->
-<div id="nav-placeholder"></div>
-<script>
-	$(function(){
-	$("#nav-placeholder").load("nav.html");
-	});
-</script>
+<?php
+   include('nav.php');
+?>
 <!--Body-->
 <body>
     <div class="fluid-container">

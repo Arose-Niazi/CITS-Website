@@ -37,7 +37,7 @@
             • All other rounds will have one match.<br>
             • Game type:  Search and Destroy.</p>
         <!--Register-->
-        <a href="registeration.html"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
+        <a href="registeration.php"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
         <!--More Projects-->
         <div class="row">
             <div class="col-md-6">
