@@ -132,9 +132,8 @@
     <div class="partition partition-main">
         <span class="container text-center">Our Events...</span>
     </div>
-    <?php
-    include('testing.php');
-  ?>
+    <iframe id='frameid' src="testing.html" scrolling="no"></iframe>
+
   
 </body>
 <!--footer-->
