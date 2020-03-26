@@ -1,3 +1,9 @@
+<head>
+  <?php
+    include('header.php');
+  ?>
+  </head>
+
 <div class="navbar" id="nav">
   <a class="Logo"><IMG src="Images/logo.png" width="120px" height="50px" /></a>
   <div class="reverse">
