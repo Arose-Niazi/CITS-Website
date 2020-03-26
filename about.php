@@ -84,7 +84,7 @@
 												<center><img class="person" src="Images/ImagesMembers/'.$ID.'.png"></center>
 												<p class="heading text-center" style="font-size: bolder">'.$Name.'</p>
 												<p class="post text-center">'.$RankDisplay.'</p>
-												<p class="description text-justify">'.$About.'</p>
+												<p class="description text-justify text-center">'.$About.'</p>
 											</div>
 										</div>';
 								}

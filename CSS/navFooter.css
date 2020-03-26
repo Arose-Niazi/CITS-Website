@@ -114,7 +114,7 @@ a.icon {
   text-align: left;
   font-size: 80%;
 }
-}
+
 .Logo {
   padding: 2px!important;
   margin: 0px;
@@ -169,7 +169,7 @@ a.icon {
 #nav-icon1 span:nth-child(3) {
   top: 32px;
 }
-
+}
 /*Footer*/
 
 footer {
