@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="stylesheet" href="Awesome/css/all.css">
-    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/about.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <link rel="stylesheet" href="CSS/aos.css" />
-    <script src="JavaScript/nav.js"></script>
-</head>
-<!--Navbar-->
-<div id="nav-placeholder"></div>
-    <script>
-        $(function(){
-        $("#nav-placeholder").load("nav.html");
-        });
-    </script>
-<!--Body-->
-
+<?php
+   include('nav.php');
+?>
 <body>
     <div class="fluid-container">
         <div class="partition">
@@ -51,7 +30,7 @@
         </div>
     </div>
 	<?php
-		$mysqli = new mysqli("localhost", "root", "", "CITS"); 
+		$mysqli = new mysqli("localhost", "arosenia_aeman", "YZOwr_=6(Ih@", "arosenia_cits"); 
 	?>
 	<?php 
 		$rankChecks = array();
@@ -121,10 +100,8 @@
         AOS.init();
     </script>
 </body>
+
 <!--footer-->
-<div id="footer-placeholder"></div>
-<script>
-    $(function(){
-    $("#footer-placeholder").load("footer.html");
-    });
-</script>
+<?php
+   include('footer.php');
+?>
