@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
-
+<head>
+	<?php
+    	include('header.php');
+    ?>
+    <link rel="stylesheet" href="CSS/Proj.css">
+    <script src="JavaScript/animateRg.js"></script>
+</head>
 <!--Navbar-->
     <?php
         include('nav.php');
@@ -60,7 +66,6 @@
         AOS.init();
     </script>
 </body>
-
 <!--footer-->
 <?php
    include('footer.php');

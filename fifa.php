@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-	<LINK rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
+	<?php
+    	include('header.php');
+    ?>
     <link rel="stylesheet" href="CSS/Proj.css">
-    <link rel="stylesheet" href="CSS/animateRg.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <script src="JavaScript/nav.js"></script>
+    <script src="JavaScript/animateRg.js"></script>
 </head>
 
 <!--Navbar-->

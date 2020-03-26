@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="Awesome/css/all.css">
-    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
+	<?php
+    	include('header.php');
+    ?>
     <link rel="stylesheet" href="CSS/Proj.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <link rel="stylesheet" href="CSS/aos.css" />
-    <script src="JavaScript/nav.js"></script>
+    <script src="JavaScript/animateRg.js"></script>
 </head>
 <!--Navbar-->
 <?php
@@ -31,8 +23,8 @@
         <div data-aos="fade-left" data-aos-duration="900" class="proj-img"><img
                 src="Images/events/party.jpg" alt="5 Terre"></div>
 
-        <div class="heading">Welcome Party</div>
-        <span class="date">- Its all about Memories -</span>
+        <div class="heading">Seminars</div>
+        <span class="date">- Learning is the key -</span>
         <div class="partition-bar"></div>
         <p class="proj-des">
             Parties arranged by CITS are full of fun. CITS in past few semesters, arranged number of welcome parties for new students. 

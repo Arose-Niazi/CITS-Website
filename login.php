@@ -1,28 +1,15 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="Awesome/css/all.css">
-    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-	<LINK rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
-    <link rel="stylesheet" href="CSS/login.css" />
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <script src="JavaScript/nav.js"></script>
-
+	<?php
+    	include('header.php');
+    ?>
+    <link rel="stylesheet" href="CSS/login.css">
     <script>
         function contactUs() {
         document.getElementById("contactUs").innerHTML = '<span>Contact Us On Whatsapp &#128512;</span>'
         }    
     </script>
 </head>
-
 <!--Navbar-->
 <?php
    include('nav.php');

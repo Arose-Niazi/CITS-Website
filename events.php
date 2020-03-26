@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
+	<?php
+    	include('header.php');
+    ?>
     <link rel="stylesheet" href="CSS/projects.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <script src="JavaScript/nav.js"></script>
     <script src="JavaScript/projects.js"></script>
-
 </head>
 <!--Navbar-->
 <?php
@@ -30,7 +23,7 @@
         <div class="row">
             <!--Futsal-->
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='futsal.html'">
+                <div class="proj-case" onclick="window.location.href='futsal.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/futsal.jpeg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -46,7 +39,7 @@
             </div>
             <!--Treasure Hunt-->
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='treasureHunt.html'">
+                <div class="proj-case" onclick="window.location.href='treasureHunt.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/treasureHunt.jpg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -63,7 +56,7 @@
             </div>
             <!--FIFA-->
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='fifa.html'">
+                <div class="proj-case" onclick="window.location.href='fifa.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/fifa.jpg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -82,7 +75,7 @@
         <div class="row">
             <!--Welcome Party-->
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='party.html'">
+                <div class="proj-case" onclick="window.location.href='party.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/party.jpg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -114,7 +107,7 @@
             </div>
 
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='futsal.html'">
+                <div class="proj-case" onclick="window.location.href='futsal.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/futsal.jpeg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -132,7 +125,7 @@
 
         <div class="row">
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='futsal.html'">
+                <div class="proj-case" onclick="window.location.href='futsal.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/futsal.jpeg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -148,7 +141,7 @@
             </div>
 
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='futsal.html'">
+                <div class="proj-case" onclick="window.location.href='futsal.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/futsal.jpeg" alt="5 Terre"
                                 style="width:100%"></div>
@@ -164,7 +157,7 @@
             </div>
 
             <div class="col-md-4 content">
-                <div class="proj-case" onclick="window.location.href='futsal.html'">
+                <div class="proj-case" onclick="window.location.href='futsal.php'">
                     <div class="proj">
                         <div id="nice-img"><img src="Images/events/futsal.jpeg" alt="5 Terre"
                                 style="width:100%"></div>

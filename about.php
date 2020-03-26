@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-
+<head>
+	<?php
+    	include('header.php');
+	?>
+	<link rel="stylesheet" href="CSS/about.css">
+</head>
 <?php
    include('nav.php');
 ?>
@@ -91,16 +96,12 @@
 				echo '</div>';		
 			}
 		}	
-	?> 
-
-    <!--Footer-->
-
-    <script src="JavaScript/aosb.js"></script>
+	?>
+	<script src="JavaScript/aosb.js"></script>
     <script>
         AOS.init();
     </script>
-</body>
-
+</body> 
 <!--footer-->
 <?php
    include('footer.php');

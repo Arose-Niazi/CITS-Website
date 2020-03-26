@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
+	<?php
+    	include('header.php');
+    ?>
     <link rel="stylesheet" href="CSS/contact_us.css">
-    <link rel="stylesheet" href="CSS/aos.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
-    <script src="JavaScript/nav.js"></script>
-
 </head>
 <!--Navbar-->
 <?php
@@ -56,7 +48,7 @@
                 </form>
             <div class="text-slope item2">
                 <span class="h">-Our Location</span>
-                <div class="heading" style="color: white; font-size: 20px;">COMSATS ISLAMABAD</div>
+                <div class="heading" style="color: white; font-size: 20px;">COMSATS UNIVERSITY ISLAMABAD</div>
                 <div class="partition-bar" style="background-color: whitesmoke; margin-bottom: 0px"></div>
                 </br>
                 Lahore Campus</br>
