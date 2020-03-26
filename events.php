@@ -14,12 +14,9 @@
 
 </head>
 <!--Navbar-->
-<div id="nav-placeholder"></div>
-<script>
-    $(function(){
-    $("#nav-placeholder").load("nav.html");
-    });
-</script>
+<?php
+   include('nav.php');
+?>
 <!--Body-->
 <body>
 
@@ -186,9 +183,6 @@
     <a href="#" id="loadMore" class="allBtns">Load More</a>
 </body>
 <!--footer-->
-<div id="footer-placeholder"></div>
-<script>
-    $(function(){
-    $("#footer-placeholder").load("footer.html");
-    });
-</script>
+<?php
+   include('footer.php');
+?>

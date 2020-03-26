@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/aos.css">
     <link rel="stylesheet" href="CSS/Theme.css">
     <link rel="stylesheet" href="CSS/Proj.css">
+    <link rel="stylesheet" href="CSS/animateRg.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,18 +17,16 @@
     <script src="JavaScript/nav.js"></script>
 </head>
 <!--Navbar-->
-<div id="nav-placeholder"></div>
-<script>
-    $(function(){
-    $("#nav-placeholder").load("nav.html");
-    });
-</script>
+<?php
+   include('nav.php');
+?>
 <!--Body-->
+
 <body>
     <div class="fluid-container">
 
         <div class="partition">
-            <span class="container text-center">Seminar..</span>
+            <span class="container text-center">Welcome Party..</span>
         </div>
     </div>
     <div class="container main-body">
@@ -69,7 +68,9 @@
             for sky lanterns, this is the sort of memory and first memorable moment for new students. At that time sky's grace become more 
             elegant and its a high beautiful moment of watching sky lanterns floating in sky. What a memory! <br>
             Last but not the least group pictures of sections are captured and CITS is ready to say Good bye to their beautiful junior 
-            guests of the night. 
+            guests of the night. </p>
+        <!--Register-->
+        <a href="registeration.html"><h6 class="animated infinite flash slower"><br><span style="color: rgb(56, 122, 212);">Get Yourselves Registered <span style=" font-size: 18px; font-weight: bold;">!</span></span></h6></a>  
         <!--More Events-->
         <div class="row">
             <div class="col-md-6">
@@ -99,9 +100,6 @@
     </script>
 </body>
 <!--footer-->
-<div id="footer-placeholder"></div>
-<script>
-    $(function(){
-    $("#footer-placeholder").load("footer.html");
-    });
-</script>
+<?php
+   include('footer.php');
+?>

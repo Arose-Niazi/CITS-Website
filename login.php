@@ -24,12 +24,9 @@
 </head>
 
 <!--Navbar-->
-<div id="nav-placeholder"></div>
-<script>
-    $(function(){
-    $("#nav-placeholder").load("nav.html");
-    });
-</script>
+<?php
+   include('nav.php');
+?>
 <!--Body-->
 
 <body>
@@ -59,9 +56,6 @@
     </script>
 </body>
 <!--footer-->
-<div id="footer-placeholder"></div>
-<script>
-    $(function(){
-    $("#footer-placeholder").load("footer.html");
-    });
-</script>
+<?php
+   include('footer.php');
+?>
