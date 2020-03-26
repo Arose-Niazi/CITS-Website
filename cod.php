@@ -43,7 +43,7 @@
             <div class="col-md-6">
                 <div class="heading text-center" style="font-size: 20px; margin-top: 130px; text-transform: uppercase">
                     See More of our events:</div>
-                <center><a href="events.html"><button class="more">See More<img
+                <center><a href="events.php"><button class="more">See More<img
                                 src="Images/arrowRY.png" width="20" height="20"></button></a>
                 </center>
             </div>
