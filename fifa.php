@@ -4,7 +4,7 @@
     	include('header.php');
     ?>
     <link rel="stylesheet" href="CSS/Proj.css">
-    <script src="JavaScript/animateRg.js"></script>
+    <script src="CSS/animateRg.css"></script>
 </head>
 
 <!--Navbar-->

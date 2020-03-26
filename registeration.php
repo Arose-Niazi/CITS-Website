@@ -5,6 +5,7 @@
     	include('header.php');
     ?>
     <link rel="stylesheet" href="CSS/reg.css">
+	<script src="JavaScript/reg.js"></script>
 </head>
 <!--Navbar-->
 <?php
