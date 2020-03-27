@@ -20,8 +20,8 @@
           </p>
           <div class="text-right"><button class="allBtns"
                   onclick="top.location='treasureHunt.php'"><span>Read
-                      More</span><img src="Images/arrowRY.png" width="20"
-                      height="20"></button>
+                      More</span><img src="Images/arrowRY.png" style="width:20px;
+                      height:20px"></button>
           </div>
       </div>
   </div>
@@ -32,8 +32,8 @@
               Come and show us what you've got!</span></p>
           <div class="text-right"><button class="allBtns"
                   onclick="top.location='fifa.php'"><span>Read
-                      More</span><img src="Images/arrowRY.png" width="20"
-                      height="20"></button>
+                      More</span><img src="Images/arrowRY.png" style="width:20px;
+                      height:20px"></button>
                   </div>
       </div>
   </div>
@@ -44,8 +44,8 @@
             Come play with us!</span></p>
           <div class="text-right"><button class="allBtns"
                   onclick="top.location='futsal.php'"><span>Read
-                      More</span><img src="Images/arrowRY.png" width="20"
-                      height="20"></button></div>
+                      More</span><img src="Images/arrowRY.png" style="width:20px;
+                      height:20px"></button></div>
       </div>
   </div>
   <div u="image" class="polaroid">
@@ -55,8 +55,8 @@
             Kill your enemies!</span></p>
                 <div class="text-right"><button class="allBtns"
                   onclick="top.location='futsal.php'"><span>Read
-                      More</span><img src="Images/arrowRY.png" width="20"
-                      height="20"></button></div>
+                      More</span><img src="Images/arrowRY.png" style="width:20px;
+                      height:20px"></button></div>
       </div>
   </div>
   <div u="image" class="polaroid">
@@ -66,8 +66,8 @@
             Live in present and find a reason to celebrate</span></p>
           <div class="text-right"><button class="allBtns"
                   onclick="top.location='party.php'"><span>Read
-                      More</span><img src="Images/arrowRY.png" width="20"
-                      height="20"></button></div>
+                      More</span><img src="Images/arrowRY.png" style="width:20px;
+                      height:20px"></button></div>
       </div>
   </div>
 
