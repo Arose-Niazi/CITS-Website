@@ -63,8 +63,13 @@
         margin-top: 200px
     }
 }
+@media (max-width:772px){
+    .sp-img-r{
+        margin-top: -1700px;
+    }
+}
 @media (max-width:600px){
     .sp-img-r{
-        margin-top: -690px;
+        margin-top: -1340px;
     }
 }
