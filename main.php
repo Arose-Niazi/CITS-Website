@@ -127,17 +127,16 @@
             </div>
             <div class="col-md-4 col-sm-4 hover-up">
                 <div class="company-des">
-                    <i class='fas fa-pencil-ruler heading-icon'></i></i><br><br>
+                <i class="fa fa-user-plus" aria-hidden="true"></i><br><br>
                     <span class="heading"> Self-Confidence</span></br>
                     <span class="description">Each time we face our fear, we gain strength, courage, and confidence in the doing. </span>
                 </div>
             </div>
             <div class="col-md-4 col-sm-4 hover-up">
                 <div class="company-des">
-                    <i class="fa fa-shopping-cart heading-icon"></i></i><br><br>
-                    <span class="heading">
-                        Shop For Your Home</span></br>
-                    <span class="description">Decorate and design with products from our curated collection </span>
+                    <i class="fa fa-shopping-cart heading-icon"></i><br><br>
+                    <span class="heading"> Discounts</span></br>
+                    <span class="description">Get 10% off on every single event organized by CITS! </span>
                 </div>
             </div>
         </div>
