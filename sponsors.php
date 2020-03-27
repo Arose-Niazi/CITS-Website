@@ -48,7 +48,10 @@
                 </div>
             </div>
             <div class="row sp hover-up">
-                <div class="col-md-8 sp-text text-r">
+                <div class="col-md-4 order-md-2">
+                    <img class="sp-img sp-img-r" src="Images/partners/trunks.jpeg">
+                </div>
+                <div class="col-md-8 sp-text text-r order-md-1">
                     <span class="heading" style="color: rgb(38,88,57)">Trunkwala's</span><br>
                     <div style="background: rgb(38,88,57)" class="partition-bar"></div>
                     <p>
@@ -77,9 +80,7 @@
                     Websote: <a href="http://worldgroup.pk/">worldgroup.pk</a>
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <img class="sp-img sp-img-r" src="Images/partners/trunks.jpeg">
-                </div>
+                
             </div>
             <div class="row sp hover-up">
                 <div class="col-md-4">
