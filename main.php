@@ -120,21 +120,21 @@
         <div class="row text-center">
             <div class="col-md-4 col-sm-4 hover-up">
                 <div class="company-des">
-                    <i class="fa fa-picture-o heading-icon"></i><br><br>
+                    <i class="fa fa-globe heading-icon"></i><br><br>
                     <span class="heading"> Social Build up</span></br>
                     <span class="description">It is not enough to be compassionate, you need to be social! </span>
                 </div>
             </div>
             <div class="col-md-4 col-sm-4 hover-up">
                 <div class="company-des">
-                <i class="fa fa-user-plus" aria-hidden="true"></i><br><br>
+                <i class="fa fa-user-plus heading-icon"></i><br><br>
                     <span class="heading"> Self-Confidence</span></br>
                     <span class="description">Each time we face our fear, we gain strength, courage, and confidence in the doing. </span>
                 </div>
             </div>
             <div class="col-md-4 col-sm-4 hover-up">
                 <div class="company-des">
-                    <i class="fa fa-shopping-cart heading-icon"></i><br><br>
+                    <i class="fa fa-percent heading-icon"></i><br><br>
                     <span class="heading"> Discounts</span></br>
                     <span class="description">Get 10% off on every single event organized by CITS! </span>
                 </div>
