@@ -40,7 +40,7 @@
         margin-left: 0px;
     }
 }/*
-@media (max-width:992px){
+@media (min-width:769px){
     .sp-text{
         padding:0px;
         margin: 20px;
@@ -50,20 +50,12 @@
         width: 250px;
         margin-top: 65px;
     }
-    .sp-img-cr{
-        height: 200px;
-        width: 200px;
-        margin-top: 30px;
-    }
     .sp-img-r{
-        margin-top: -110em;
         margin-left: 0px;
     }
-    .text-r{
-        margin-top: 200px
-    }
+    
 }
-@media (max-width:772px){
+/*@media (max-width:772px){
     .sp-img-r{
         margin-top: -100em;
     }
