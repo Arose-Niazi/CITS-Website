@@ -2,7 +2,7 @@
 <head>
 	<?php
 		include('header.php');
-		require_once('connection.php');
+		require_once('includes/connection.php');
 	?>
 	<link rel="stylesheet" href="CSS/about.css">
 </head>
