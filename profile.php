@@ -25,6 +25,7 @@
 				$Contact = $row["Contact"];
 				$Rank = $row["Rank"];
 				$Email = $row["Email"];
+				$result->close();		
 			}
 			else
 				exit;
