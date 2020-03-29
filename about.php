@@ -1,12 +1,16 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE html>
 <head>
 	<?php
-    	include('header.php');
+		include('includes/header.php');
+		require_once('includes/connection.php');
 	?>
 	<link rel="stylesheet" href="CSS/about.css">
 </head>
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <body>
     <div class="fluid-container">
@@ -34,9 +38,6 @@
                 which is actually a development, design, study, implementation and management of computer related information.</p>
         </div>
     </div>
-	<?php
-		$mysqli = new mysqli("localhost", "arosenia_aeman", "YZOwr_=6(Ih@", "arosenia_cits"); 
-	?>
 	<?php 
 		$rankChecks = array();
 		$rankChecks[0] = 10;
@@ -104,5 +105,5 @@
 </body> 
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>

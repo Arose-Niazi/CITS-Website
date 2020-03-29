@@ -1,14 +1,17 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE html>
 
 <head>
 	<?php
-    	include('header.php');
+    	include('includes/header.php');
     ?>
     <link rel="stylesheet" href="CSS/profile.css">
 </head>
 <!--Navbar-->
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <!--Body-->
 
@@ -40,5 +43,5 @@
 </body>
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>

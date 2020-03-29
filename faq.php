@@ -1,7 +1,10 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE HTML>
 <head>
 	<?php
-    	include('header.php');
+    	include('includes/header.php');
 	?>
 	<script src="Ajax/jquery.min.js"></script>
 	<script src="Ajax/popper.min.js"></script>
@@ -10,7 +13,7 @@
 
 <!--Navbar-->
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <!--Body-->
 <body>
@@ -222,5 +225,5 @@
 
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>
