@@ -3,9 +3,12 @@
   <a class="Logo"><IMG src="Images/logo.png" width="120px" height="50px" /></a>
   <div class="reverse">
 	<?php
-	if(isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"] === true)
+  if(isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"] === true)
+  {
+    echo '<a href="profile.php?logout=ture">Logout</a>';
 		echo '<a href="profile.php">Profile</a>';
-	else
+  }
+  else
 		echo '<a href="login.php">Login</a>';
 	?>
     
