@@ -1,32 +1,21 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 
 <head>
-  <!--<?php
-    //include('header.php');
-  ?>
-  <link rel="stylesheet" href="CSS/Main.css">
-  <link rel="stylesheet" href="CSS/Theme.css">
-  <link rel="stylesheet" href="CSS/maincover.css">
-  <script src="JavaScript/testing.js"></script>-->
-  <link rel="stylesheet" href="Awesome/css/all.css">
-    <link rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<?php
+		include('includes/header.php');
+	?>
     <link rel="stylesheet" href="CSS/Main.css">
-    <link rel="stylesheet" href="CSS/Theme.css">
     <link rel="stylesheet" href="CSS/maincover.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="JavaScript/jQ.js"></script>
-    <script src="JavaScript/bootStrap.js"></script>
     <script src="JavaScript/Main.js"></script>
-    <script src="JavaScript/nav.js"></script>
     <script src="JavaScript/testing.js"></script>
 </head>
 
 <!--Navbar-->
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <!--Body-->
 <body>
@@ -150,5 +139,5 @@
 </body>
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>

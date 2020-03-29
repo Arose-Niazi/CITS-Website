@@ -1,15 +1,18 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE html>
 
 <head>
 	<?php
-    	include('header.php');
+    	include('includes/header.php');
     ?>
     <link rel="stylesheet" href="CSS/reg.css">
 	<script src="JavaScript/reg.js"></script>
 </head>
 <!--Navbar-->
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <!--Body-->
 <body>
@@ -58,5 +61,5 @@
 </body>
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>

@@ -1,7 +1,10 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE html>
 <head>
 	<?php
-    	include('header.php');
+    	include('includes/header.php');
     ?>
     <link rel="stylesheet" href="CSS/Proj.css">
     <script src="CSS/animateRg.css"></script>
@@ -9,7 +12,7 @@
 
 <!--Navbar-->
 <?php
-   include('nav.php');
+   include('includes/nav.php');
 ?>
 <!--Body-->
 
@@ -83,5 +86,5 @@
 </body>
 <!--footer-->
 <?php
-   include('footer.php');
+   include('includes/footer.php');
 ?>

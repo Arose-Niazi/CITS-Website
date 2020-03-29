@@ -1,7 +1,10 @@
+<?php
+	session_start();
+ ?>
 <!DOCTYPE html>
 <head>
   <?php
-    include('header.php');
+    include('includes/header.php');
   ?>
   <link rel="stylesheet" href="CSS/Main.css">
   <link rel="stylesheet" href="CSS/Theme.css">
