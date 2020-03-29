@@ -15,8 +15,7 @@
 		require_once('includes/connection.php');
 		require_once('includes/functions.php');
 		
-		$query = "SELECT * FROM Members WHERE ID = ".$_SESSION["ID"];
-		echo $query;
+		$query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
 		if ($result = $mysqli->query($query)) 
 			if($row = $result->fetch_assoc())
 			{
@@ -33,7 +32,9 @@
 		else
 			exit;
 			
-		
+		if (isset($_GET['logout'])) {
+			logout();
+		}	
     ?>
     <link rel="stylesheet" href="CSS/profile.css">
 </head>
@@ -90,7 +91,7 @@
                     <div class="edit"><a href="profileUpdate.html">Edit Profile</a></div>
                     <div class="edit">Request Card</div>
                     <div class="edit">Submit Time Table</div>
-					<div class="edit"><a href="<?php logout(); ?>">Logout</a></div>
+					<div class="edit"><a href="profile.php?logout=true">Logout</a></div>
                 </div>
             </div>
         </div>
