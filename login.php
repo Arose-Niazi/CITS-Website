@@ -43,7 +43,7 @@
 					
 					// Store data in session variables
 					$_SESSION["LoggedIn"] = true;
-					$_SESSION["ID"] = $id;
+					$_SESSION["ID"] = $ID;
 					$_SESSION["Name"] = $row['Name']; 		
 					
 					header("location: profile.php");

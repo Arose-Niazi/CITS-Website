@@ -13,8 +13,10 @@
 	<?php
     	include('includes/header.php');
 		require_once('includes/connection.php');
+		require_once('includes/functions.php');
 		
 		$query = "SELECT * FROM Members WHERE ID = ".$_SESSION["ID"];
+		echo $query;
 		if ($result = $mysqli->query($query)) 
 			if($row = $result->fetch_assoc())
 			{
@@ -52,7 +54,7 @@
         <!--Image and Info-->
         <div class="row part">
             <div class="col-md-5">
-                <img class="person-img" src="Images/ImagesMembers/FA18-BSE-010.png"/>
+                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID?>.png"/>
             </div>
             <div class="col-md-7">
                 <div class="grid-container">
@@ -88,6 +90,7 @@
                     <div class="edit"><a href="profileUpdate.html">Edit Profile</a></div>
                     <div class="edit">Request Card</div>
                     <div class="edit">Submit Time Table</div>
+					<div class="edit"><a href="<?php logout(); ?>">Logout</a></div>
                 </div>
             </div>
         </div>
