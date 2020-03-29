@@ -1,11 +1,37 @@
 <?php
 	session_start();
+	
+	if(!isset($_SESSION["LoggedIn"]) || $_SESSION["LoggedIn"] === false)
+	{
+		header("location: login.php");
+		exit;
+	}
  ?>
 <!DOCTYPE html>
 
 <head>
 	<?php
     	include('includes/header.php');
+		require_once('includes/connection.php');
+		
+		$query = "SELECT * FROM Members WHERE ID = ".$_SESSION["ID"];
+		if ($result = $mysqli->query($query)) 
+			if($row = $result->fetch_assoc())
+			{
+				$ID = $row["ID"];
+				$Name = $row["Name"];
+				$RankDisplay = $row["RankDisplay"];
+				$Contact = $row["Contact"];
+				$Rank = $row["Rank"];
+				$Email = $row["Email"];
+			}
+			else
+				exit;
+			
+		else
+			exit;
+			
+		
     ?>
     <link rel="stylesheet" href="CSS/profile.css">
 </head>
@@ -31,15 +57,15 @@
             <div class="col-md-7">
                 <div class="grid-container">
                     <div class="grid-item item1 q">Name: </div>
-                    <div class="grid-item item2">Arose Niazi</div>
+                    <div class="grid-item item2"><?php echo $Name?></div>
                     <div class="grid-item q">Registeration Number: </div>  
-                    <div class="grid-item">FA18-BSE-010</div>  
+                    <div class="grid-item"><?php echo $ID?></div>  
                     <div class="grid-item q">Rank: </div>
-                    <div class="grid-item">General Secretrary</div>
+                    <div class="grid-item"><?php echo $RankDisplay?></div>
                     <div class="grid-item q">Contact: </div>
-                    <div class="grid-item">0000-0000000 </div>
+                    <div class="grid-item"><?php echo $Contact?></div>
                     <div class="grid-item q">Email: </div>
-                    <div class="grid-item">abc@gmail.com </div>
+                    <div class="grid-item"><?php echo $Email?></div>
                 </div>
             </div>
         </div>
