@@ -31,8 +31,37 @@
 				exit;
 			
 		else
-			exit;
-			
+            exit;
+            
+        $dutyDay = array();   
+        $dutyHour = array();
+        $dutyMin = array();
+        $dutyHourEnd = array();
+        $dutyMinEnd = array();
+        $dutyDate = array();
+        $dutyCounter = 0;
+        $query = "SELECT DAYNAME(Date) AS Day,HOUR(Date) AS Hour, MINUTE(Date) AS Mins,HOUR(DATE_ADD(Date,INTERVAL 90 MINUTE)) AS HourEnd, MINUTE(DATE_ADD(Date,INTERVAL 90 MINUTE)) AS MinsEnd, DATE_FORMAT(Date,'%d-%m-%Y') AS Date FROM Duty WHERE Date > CURRENT_TIMESTAMP() AND Member = '".$ID."' ORDER BY Date ASC";
+
+        if ($result = $mysqli->query($query)) 
+            while($row = $result->fetch_assoc())
+            {
+                $dutyDay[$dutyCounter] = $row['Day'];
+                $dutyHour[$dutyCounter] = $row['Hour'];
+                $dutyMin[$dutyCounter] = $row['Mins'];
+                $dutyHourEnd[$dutyCounter] = $row['HourEnd'];
+                $dutyMinEnd[$dutyCounter] = $row['MinsEnd'];
+                $dutyDate[$dutyCounter++] = $row['Date'];
+            }
+
+        $news = array();
+        $newsCounter = 0;
+         
+        $query = "SELECT * FROM News WHERE ActiveTill > CURRENT_TIMESTAMP() ORDER BY ID DESC";
+        
+        if ($result = $mysqli->query($query)) 
+            while($row = $result->fetch_assoc())
+                $news[$newsCounter++] = $row['Details'];
+
 		if (isset($_GET['logout'])) {
 			logout();
 		}	
@@ -77,21 +106,52 @@
         <div class="row part">
             <div class="col-md-8">
                 <!--Duty-->
-                <div style="color: rgb(55,116,201)">Duty: </div>
-                <div class="grid-container part">
-                    <div class="grid-item item1">Monday:</div><div class="grid-item item2">1:00-2:30</div>
-                    <div class="grid-item">Tuesday:</div><div class="grid-item">8:30-10:00</div>
-                </div>
-                <div style="color: rgb(55,116,201); padding-top: 20px;">News: </div>
-                <div class="news">Meeting. Tomorrow 1 PM. At N2. Your presence is mandatory. In case of any problem do inform</div>
-                <div class="news">Please fill the following form.</div>
-            </div>
+                <?php
+                    if($dutyCounter > 0)
+                    {
+                        echo '
+                            <div style="color: rgb(55,116,201)">Duty: </div>
+                            <div class="grid-container part">';
+                    }
+                    for($x = 0; $x < $dutyCounter; $x++)
+                    {
+                        if($x == 0)
+                            echo '<div class="grid-item item1">';
+                        else
+                            echo '<div class="grid-item">';
+                            
+                            
+                        echo $dutyDay[$x].' ('.$dutyDate[$x].'):</div>';
+                        
+                        if($x == 0)
+                            echo '<div class="grid-item item2">';
+                        else
+                            echo '<div class="grid-item">';
+                        
+                        printf("%02d:%02d-%02d:%02d",$dutyHour[$x],$dutyMin[$x],$dutyHourEnd[$x],$dutyMinEnd[$x]);
+                        echo '</div>';
+                    }
+                    if($dutyCounter > 0)
+                    {
+                        echo '</div>';
+                    }
+                    echo '<div style="color: rgb(55,116,201); padding-top: 20px;">News: </div>';
+                    for($x = 0; $x < $newsCounter; $x++)
+                    {
+                        echo '<div class="news">'.$news[$x].'</div>';
+                    }
+                    if($newsCounter == 0)
+                    {
+                        echo '<div class="news">No new news.</div>';
+                    }
+                    echo '</div>';
+                ?>
             <!--Edit-->
             <div class="col-md-4">
                 <div class="btns">
                     <div class="edit"><a href="profileUpdate.html">Edit Profile</a></div>
-                    <div class="edit">Request Card</div>
-                    <div class="edit">Submit Time Table</div>
+                    <!--<div class="edit">Request Card</div>
+                    <div class="edit">Submit Time Table</div> -->
 					<div class="edit"><a href="profile.php?logout=true">Logout</a></div>
                 </div>
             </div>
