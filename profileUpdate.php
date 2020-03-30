@@ -25,7 +25,7 @@
         <!--Image and Info-->
         <div class="row part">
             <div class="col-md-5 ">
-                <div id="change" class="change"><img id="img" class="person-img" src="Images/ImagesMembers/FA18-BSE-010.png"/></div>
+                <div class="change"><img id="img" class="person-img" src="Images/ImagesMembers/FA18-BSE-010.png"/></div>
                 <input style="border: none" class="uploadImg" id="file" type="file" accept="image/*">
             </div>
             <div class="col-md-7">
