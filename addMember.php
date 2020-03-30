@@ -8,6 +8,7 @@
     	include('includes/header.php');
     ?>
     <link rel="stylesheet" href="CSS/reg.css">
+    <script src="JavaScript/addMember.js"></script>
 </head>
 <!--Navbar-->
 <?php
@@ -37,9 +38,16 @@
         <!--Reg Number-->
         <div class="grid-item"><span class="Q">Registeration No.<span class="req"> *</span> :</span></div>
         <div class="grid-item"><input placeholder="AA00-BBB-000" TYPE="text" NAME="CONATCT" SIZE="30" maxlength="12" pattern="[A-Za-z][A-Za-z][0-9][0-9][\\-][A-Za-z][A-Za-z][A-Za-z][\\-][0-9][0-9][0-9]" required /></div>
+        <!--Joined Date-->
+        <div class="grid-item"><span class="Q">Joined Date<span class="req"> *</span> :</span></div>
+        <div class="grid-item"><div class="md-form">
+        <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+        <label for="date-picker-example">Try me...</label>
+        </div></div>
         <!--Profile Photo-->
         <div class="grid-item"><span class="Q">Profile Photo : </span></div>
-        <button class="allBtns btn-prof">Upload Photo</button>
+        <input class="btn-prof" id="file" type="file" accept="image/*">
+
         <!--Submit Button-->
         <div class="grid-item"></div><button class="allBtns btn-sub">SUBMIT</button>
     </form>
