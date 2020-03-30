@@ -15,6 +15,11 @@
 ?>
 <!--Body-->
 <body>
+    <div class="fluid-container">
+        <div class="partition">
+            <span class="container text-center">Add Member..</span>
+        </div>
+    </div>
     <div class="container main-body">
     <form autocomplete="off">
         <!--Name-->
@@ -23,7 +28,7 @@
         <!--Contact Number-->
         <div class="grid-item"><span class="Q">Contact No.<span class="req"> *</span> :</span></div>
         <div class="grid-item"><input class="read" style="width: 20%; padding-left: 10px; padding-right: 10px;" type="text" name="code" value="92" readonly> 
-        <input style="width: 79.3%" placeholder="000-0000000" TYPE="text" NAME="CONATCT" maxlength="11" pattern="\\d{3}[\\-]\\d{7}" required /></div>
+        <input style="width: 79.3%" placeholder="000-0000000" TYPE="text" NAME="CONATCT" maxlength="11" pattern="\d{3}[\-]\d{7}" required /></div>
         <!--Email-->
         <div class="grid-item"><span class="Q">Email<span class="req"> *</span> : </span></div>
         <div class="grid-item"><INPUT placeholder="Email" TYPE="TEXT" NAME="email" SIZE="30" MAXLENGTH="50"
