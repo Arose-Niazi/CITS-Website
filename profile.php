@@ -24,7 +24,8 @@
 				$RankDisplay = $row["RankDisplay"];
 				$Contact = $row["Contact"];
 				$Rank = $row["Rank"];
-				$Email = $row["Email"];
+                $Email = $row["Email"];
+                $Img = $row['Image'];
 				$result->close();		
 			}
 			else
@@ -85,7 +86,7 @@
         <!--Image and Info-->
         <div class="row part">
             <div class="col-md-5">
-                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID?>.png"/>
+                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID.$Img?>.jpg"/>
             </div>
             <div class="col-md-7">
                 <div class="grid-container">

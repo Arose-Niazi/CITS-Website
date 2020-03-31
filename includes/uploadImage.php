@@ -10,10 +10,10 @@ $fileName = preg_replace('#[^a-z.0-9]#i', '', $fileName); // filter the $filenam
 $kaboom = explode(".", $fileName); // Split file name into an array using the dot
 $fileExt = end($kaboom); // Now target the last array element to get the file extension
 
+$skipFileUpdate = false;
 // START PHP Image Upload Error Handling --------------------------------
 if (!$fileTmpLoc) { // if file not chosen
-    echo "ERROR: Please browse for a file before clicking the upload button.";
-    exit();
+   $skipFileUpdate = true;
 } else if($fileSize > 5242880) { // if file size is larger than 5 Megabytes
     echo "ERROR: Your file was larger than 5 Megabytes in size.";
     unlink($fileTmpLoc); // Remove the uploaded file from the PHP temp folder
@@ -29,32 +29,31 @@ if (!$fileTmpLoc) { // if file not chosen
 }
 // END PHP Image Upload Error Handling ----------------------------------
 // Place it into your "uploads" folder mow using the move_uploaded_file() function
-$moveResult = move_uploaded_file($fileTmpLoc, "Images/ImagesMembers/$fileName");
-// Check to make sure the move result is true before continuing
-if ($moveResult != true) {
-    echo "ERROR: File not uploaded. Try again.";
-    exit();
-}
-// Include the file that houses all of our custom image functions
-include_once("includes/ak_php_img_lib_1.0.php");
-// ---------- Start Universal Image Resizing Function --------
-$target_file = "uploads/$fileName";
-$resized_file = "uploads/resized_$fileName";
-$wmax = 500;
-$hmax = 500;
-ak_img_resize($target_file, $resized_file, $wmax, $hmax, $fileExt);
-// ----------- End Universal Image Resizing Function ----------
-// ---------- Start Convert to JPG Function --------
-if (strtolower($fileExt) != "jpg") {
-    $target_file = "uploads/resized_$fileName";
-    $new_jpg = "uploads/resized_".$kaboom[0].".jpg";
-    ak_img_convert_to_jpg($target_file, $new_jpg, $fileExt);
-}
-// ----------- End Convert to JPG Function -----------
-// Display things to the page so you can see what is happening for testing purposes
-echo "The file named <strong>$fileName</strong> uploaded successfuly.<br /><br />";
-echo "It is <strong>$fileSize</strong> bytes in size.<br /><br />";
-echo "It is an <strong>$fileType</strong> type of file.<br /><br />";
-echo "The file extension is <strong>$fileExt</strong><br /><br />";
-echo "The Error Message output for this upload is: $fileErrorMsg";
+if(!$skipFileUpdate)
+{
+    unlink("Images/ImagesMembers/".$ID.$Img.".jpg");
+    $Img++;
+    $fileName = $ID.$Img.".".$kaboom[1];
+    $moveResult = move_uploaded_file($fileTmpLoc, "Images/ImagesMembers/$fileName");
+    // Check to make sure the move result is true before continuing
+    if ($moveResult != true) {
+        echo "ERROR: File not uploaded. Try again.";
+        exit();
+    }
+    // Include the file that houses all of our custom image functions
+    include_once("includes/ak_php_img_lib_1.0.php");
+    // ---------- Start Universal Image Resizing Function --------
+    $target_file = "Images/ImagesMembers/$fileName";
+    $resized_file = "Images/ImagesMembers/$fileName";
+    $wmax = 500;
+    $hmax = 500;
+    ak_img_resize($target_file, $resized_file, $wmax, $hmax, $fileExt);
+    // ----------- End Universal Image Resizing Function ----------
+    // ---------- Start Convert to JPG Function --------
+    if (strtolower($fileExt) != "jpg") {
+        $target_file = "Images/ImagesMembers/$fileName";
+        $new_jpg = "Images/ImagesMembers/".$ID.".jpg";
+        ak_img_convert_to_jpg($target_file, $new_jpg, $fileExt);
+    }
+}        
 ?>
