@@ -42,8 +42,8 @@
         <div class="grid-item"><input placeholder="AA00" TYPE="text" NAME="semester" SIZE="30" maxlength="4" pattern="[A-Za-z][A-Za-z][0-9][0-9]" required /></div>
         <!--Rank-->
         <div class="grid-item"><span class="Q">Rank.<span class="req"> *</span> :</span></div>
-        <div class="grid-item">
-        <select class="select-css">
+        <div class="grid-item row">
+        <select class="select-css col-md-3 Q">
             <option value="0">Select Value:</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -55,7 +55,7 @@
             <option value="8">8</option>
             <option value="9">9</option>
         </select>
-        <select class="select-css">
+        <select class="select-css col-md-9 Q">
             <option value="0">Select Rank:</option>
             <option value="1">President</option>
             <option value="2">Vice President</option>
