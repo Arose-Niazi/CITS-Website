@@ -1,110 +1,72 @@
-
-function isUploadSupported() {
-	if (navigator.userAgent.match(/(Android (1.0|1.1|1.5|1.6|2.0|2.1))|(Windows Phone (OS 7|8.0))|(XBLWP)|(ZuneWP)|(w(eb)?OSBrowser)|(webOS)|(Kindle\/(1.0|2.0|2.5|3.0))/)) {
-		return false;
-	}
-	var elem = document.createElement('input');
-	elem.type = 'file';
-	return !elem.disabled;
-};
-if (window.File && window.FileReader && window.FormData) {
-	var $inputField = $('#file');
-
-	$inputField.on('change', function (e) {
-		var file = e.target.files[0];
-
-		if (file) {
-			if (/^image\//i.test(file.type)) {
-				readFile(file);
-			} else {
-				alert('Not a valid image!');
-			}
-		}
-	});
-} else {
-	alert("File upload is not supported!");
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
 }
-function readFile(file) {
-	var reader = new FileReader();
-
-	reader.onloadend = function () {
-		processFile(reader.result, file.type);
-	}
-
-	reader.onerror = function () {
-		alert('There was an error reading the file!');
-	}
-
-	reader.readAsDataURL(file);
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
 }
-
-function processFile(dataURL, fileType) {
-	var maxWidth = 800;
-	var maxHeight = 800;
-
-	var image = new Image();
-	image.src = dataURL;
-
-	image.onload = function () {
-		var width = image.width;
-		var height = image.height;
-		var shouldResize = (width > maxWidth) || (height > maxHeight);
-
-		if (!shouldResize) {
-			sendFile(dataURL);
-			return;
-		}
-
-		var newWidth;
-		var newHeight;
-
-		if (width > height) {
-			newHeight = height * (maxWidth / width);
-			newWidth = maxWidth;
-		} else {
-			newWidth = width * (maxHeight / height);
-			newHeight = maxHeight;
-		}
-
-		var canvas = document.createElement('canvas');
-
-		canvas.width = newWidth;
-		canvas.height = newHeight;
-
-		var context = canvas.getContext('2d');
-
-		context.drawImage(this, 0, 0, newWidth, newHeight);
-
-		dataURL = canvas.toDataURL(fileType);
-
-		sendFile(dataURL);
-	};
-
-	image.onerror = function () {
-		alert('There was an error processing your file!');
-	};
-}
-
-function sendFile(fileData) {
-	var formData = new FormData();
-
-	formData.append('imageData', fileData);
-
-	$.ajax({
-		type: 'POST',
-		url: '/your/upload/url',
-		data: formData,
-		contentType: false,
-		processData: false,
-		success: function (data) {
-			if (data.success) {
-				alert('Your file was successfully uploaded!');
-			} else {
-				alert('There was an error uploading your file!');
-			}
-		},
-		error: function (data) {
-			alert('There was an error uploading your file!');
-		}
-	});
-}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);

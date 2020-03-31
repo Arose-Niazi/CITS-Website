@@ -93,7 +93,7 @@
                     <input placeholder="<?php echo $Email;?>" class="grid-item" type = "email" name="email"></input>
                     <div class="grid-item q">About: </div>
                     <textarea rows="5" placeholder="<?php echo $About;?>" class="grid-item" pattern=".{10,250}" title="Your about should be more than 10 and less than 250 characters." name="about"></textarea>
-                    <button style="margin-top: 8em;" class="btn-sub" type="submit" value="Save">Save</button>
+                    <button style="margin-top: 8em;" class="btn-sub allBtns" type="submit" value="Save">Save</button>
                 </div>
             </div>
         </div>

@@ -76,7 +76,7 @@ a:hover{
     width: fit-content;
     left: 20%;
 }
-input, textarea{
+input, textarea, select{
     border: 1px solid rgba(0, 0, 0, 0.123);
 }
 .uploadImg {
@@ -98,5 +98,12 @@ input, textarea{
     transition: 0.5s;
     text-decoration: none;
     font-weight: 450;
+    background-color: white;
+}
+.btn-sub{
+    position: relative;
+    padding: 5px 20px;
+    width: 100px;
+    border-radius: 4px;
     background-color: white;
 }
