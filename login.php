@@ -33,6 +33,7 @@
 		if(empty($ID_err) && empty($password_err)){
 			// Prepare a select statement
 			$password = hash('whirlpool', $password );
+			
 			$query = "SELECT * FROM Members WHERE ID = '".$ID."' AND Password = '".$password."' LIMIT 1";
 			if($result = mysqli_query($mysqli, $query))
 			{

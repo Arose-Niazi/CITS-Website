@@ -26,6 +26,7 @@
 				$Rank = $row["Rank"];
                 $Email = $row["Email"];
                 $Img = $row['Image'];
+                $Joined = $row['Joined'];
 				$result->close();		
 			}
 			else
@@ -100,6 +101,8 @@
                     <div class="grid-item"><?php echo $Contact?></div>
                     <div class="grid-item q">Email: </div>
                     <div class="grid-item"><?php echo $Email?></div>
+                    <div class="grid-item q">Joined: </div>
+                    <div class="grid-item"><?php echo $Joined?></div>
                 </div>
             </div>
         </div>
