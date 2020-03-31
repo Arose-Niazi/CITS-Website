@@ -42,30 +42,31 @@
         <div class="grid-item"><input placeholder="AA00" TYPE="text" NAME="semester" SIZE="30" maxlength="4" pattern="[A-Za-z][A-Za-z][0-9][0-9]" required /></div>
         <!--Rank-->
         <div class="grid-item"><span class="Q">Rank.<span class="req"> *</span> :</span></div>
-        <div class="grid-item custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select Value:</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    
-  </select>
-        <select>
-            <option value="Member">Member</option>
-            <option value="Graphics">Graphics</option>
-            <option value="Heads">Heads</option>
-            <option value="President">President</option>
-            <option value="General Secretrary">General Secretary</option>
-            <option value="Treasurer">Treasurer</option>
-            <option value="Vice President">Vice President</option>
-            <option value="Blah Blah">Blah Blah</option>
-        </select>        
+        <div class="grid-item">
+        <select class="select-css">
+            <option value="0">Select Value:</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select class="select-css">
+            <option value="0">Select Rank:</option>
+            <option value="1">President</option>
+            <option value="2">Vice President</option>
+            <option value="3">General Secretary</option>
+            <option value="4">Treasurer</option>
+            <option value="5">Head</option>
+            <option value="6">Member</option>
+            <!--<option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>-->
+        </select>
         </div>
         <!--Profile Photo-->
         <div class="grid-item"><span class="Q">Profile Photo : </span></div>
