@@ -55,7 +55,7 @@
             <option value="8">8</option>
             <option value="9">9</option>
         </select>
-        <select class="select-css col-md-9 Q">
+        <select class="select-css col-md-6 Q">
             <option value="0">Select Rank:</option>
             <option value="1">President</option>
             <option value="2">Vice President</option>
