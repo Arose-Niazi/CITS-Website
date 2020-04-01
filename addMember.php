@@ -105,7 +105,7 @@
         <!--Rank-->
         <div class="grid-item"><span class="Q">Rank.<span class="req"> *</span> :</span></div>
         <div class="grid-item row">
-        <select class="select-css col-md-2 Q" name = "rank">
+        <select style="margin-left: 15px;" class="select-css col-md-2 Q" name = "rank">
             <option value="0">Select Value:</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -117,22 +117,7 @@
             <option value="8">8</option>
             <option value="9">9</option>
         </select>
-<<<<<<< HEAD
-        <select class="select-css col-md-6 Q">
-            <option value="0">Select Rank:</option>
-            <option value="1">President</option>
-            <option value="2">Vice President</option>
-            <option value="3">General Secretary</option>
-            <option value="4">Treasurer</option>
-            <option value="5">Head</option>
-            <option value="6">Member</option>
-            <!--<option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>-->
-        </select>
-=======
-        <input style="width: 79.3%" placeholder="Rank to display" TYPE="text" NAME="RankDisplay" maxlength="30" required/>
->>>>>>> fe48b8cc19bb161c582839be10a5747d5369e40a
+        <input style="width: 80%; margin-left: 10px" placeholder="Rank to display" TYPE="text" NAME="RankDisplay" maxlength="30" required/>
         </div>
         <!--Profile Photo-->
         <div class="grid-item"><span class="Q">Profile Photo : </span></div>
