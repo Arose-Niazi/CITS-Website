@@ -32,7 +32,6 @@
 			}
 			else
 				exit;
-			
 		else
             exit;
 
@@ -49,11 +48,17 @@
                 $Email = trim($_POST["email"]);
                 $query = $query.", Email = '".$Email."'";
             }
-
             if(!empty(trim($_POST["about"]))){
                 $About = trim($_POST["about"]);
                 $query = $query.", About = '".$About."'";
             }
+
+            if(!empty(trim($_POST["password"]))){
+                $password = trim($_POST["password"]);
+                $password = hash('whirlpool', $password );
+                $query = $query.", Password = '".$password."'";
+            }
+            $query = $query." WHERE ID = '".$ID."'";
 		    $mysqli->query($query); 
             
             header("location: profile.php");
@@ -91,6 +96,8 @@
                     <input placeholder="<?php echo $Contact;?>" class="grid-item item2" pattern="[0][0-9]{3}[-][0-9]{7}$" title="Correct Format: 0000-0000000" name = "contact"></input>
                     <div class="grid-item q">Email: </div>
                     <input placeholder="<?php echo $Email;?>" class="grid-item" type = "email" name="email"></input>
+                    <div class="grid-item q">Password: </div>
+                    <input placeholder="Password" class="grid-item" type = "TEXT" name="password" pattern=".{6,32}" title="Your password should be more than 6 and less than 32 characters."></input>
                     <div class="grid-item q">About: </div>
                     <textarea rows="5" placeholder="<?php echo $About;?>" class="grid-item" pattern=".{10,250}" title="Your about should be more than 10 and less than 250 characters." name="about"></textarea>
                     <button style="margin-top: 8em;" class="btn-sub allBtns" type="submit" value="Save">Save</button>

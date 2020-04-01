@@ -33,6 +33,7 @@
 		if(empty($ID_err) && empty($password_err)){
 			// Prepare a select statement
 			$password = hash('whirlpool', $password );
+			
 			$query = "SELECT * FROM Members WHERE ID = '".$ID."' AND Password = '".$password."' LIMIT 1";
 			if($result = mysqli_query($mysqli, $query))
 			{
@@ -44,7 +45,7 @@
 					// Store data in session variables
 					$_SESSION["LoggedIn"] = true;
 					$_SESSION["ID"] = $ID;
-					$_SESSION["Name"] = $row['Name']; 	
+					$_SESSION["Name"] = $row['Name'];	
 					$result->close();					
 					header("location: profile.php");
 				}
@@ -87,7 +88,7 @@
             <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" autocomplete="on" data-aos="zoom-in" data-aos-duration="1200" class="login-form item1">
 				<div class="grid-item"><span class="Q">Reg No: </span></div>
 				<div class="grid-item"><input style="margin-bottom: 1px" placeholder="AA00-BBB-000" type="TEXT"
-                        NAME="ID" pattern="\w+[00-99](?:\-)\w+(?:\-)[0-999]"
+                        NAME="ID" pattern="[FA^SP]{2}[0-9]{2}[-][A-Z]{3,5}[-][0-9]{3}$"
                         title="ID should be in proper format. e.g. FA18-BSE-010" required /><i class="fa fa-user icon"></i></div>
 				<div class="grid-item"><span class="Q">Password: </span></div>
 				<div class="grid-item"><input style="margin-top: 1px" placeholder="Password" type="TEXT"

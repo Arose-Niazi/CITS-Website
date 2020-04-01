@@ -52,8 +52,9 @@ if(!$skipFileUpdate)
     // ---------- Start Convert to JPG Function --------
     if (strtolower($fileExt) != "jpg") {
         $target_file = "Images/ImagesMembers/$fileName";
-        $new_jpg = "Images/ImagesMembers/".$ID.".jpg";
+        $new_jpg = "Images/ImagesMembers/".$ID.$Img.".jpg";
         ak_img_convert_to_jpg($target_file, $new_jpg, $fileExt);
+        if($kaboom[1] != "jpg") unlink($target_file);
     }
 }        
 ?>
