@@ -33,6 +33,7 @@
 		if(empty($ID_err) && empty($password_err)){
 			// Prepare a select statement
 			$password = hash('whirlpool', $password );
+			
 			$query = "SELECT * FROM Members WHERE ID = '".$ID."' AND Password = '".$password."' LIMIT 1";
 			if($result = mysqli_query($mysqli, $query))
 			{
@@ -81,7 +82,7 @@
 
 <body>
     <div class="fluid-container">
-        <div class="text-center partition" style="margin-bottom: -200px; height: 900px" >
+        <div class="text-center partition" style="height: 50.25em; margin-bottom: -80px;" >
             <div class="partition"><span style="vertical-align: top; padding-top: 100px; text-align: center;">Member Login</span></div>
             <!--Login Form-->
             <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" autocomplete="on" data-aos="zoom-in" data-aos-duration="1200" class="login-form item1">
@@ -105,7 +106,7 @@
         AOS.init();
     </script>
 </body>
-<!--footer-->
+<!--Footer-->
 <?php
-   include('includes/footer.php');
+    include('footer.php');
 ?>

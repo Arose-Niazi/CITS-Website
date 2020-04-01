@@ -78,11 +78,11 @@
 									$Name = $row["Name"];
 									$RankDisplay = $row["RankDisplay"];
 									$About = $row["About"];
-									
+									$Img = $row['Image'];
 									echo '
 										<div class="col-md-6 col-sm-6">
 											<div data-aos="fade-up" class="block">
-												<center><img class="person" src="Images/ImagesMembers/'.$ID.'.png"></center>
+												<center><img class="person" src="Images/ImagesMembers/'.$ID.$Img.'.jpg"></center>
 												<p class="heading text-center" style="font-size: bolder">'.$Name.'</p>
 												<p class="post text-center">'.$RankDisplay.'</p>
 												<p class="description text-justify text-center">'.$About.'</p>

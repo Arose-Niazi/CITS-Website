@@ -39,8 +39,10 @@
         <img src="Images/03.jpg" alt="">
         <div class="info">
           <div>
-            <h3>Treasure Hunt</h3>
-            <h5>Something Something Something Something Something Something</h5>
+            <h3>Geekspree</h3>
+            <h5>The signature event of CITS. Student week is the high time when every society try its level best to provide entertainment 
+              to students. So under the name of Geekspree CITS manage number of different games including Welcome party of CS department, 
+              Futsal, Treasure Hunt, FIFA, and COD. For more details of each event go to EVENTS.</h5>
           </div>
         </div>
       </div>
@@ -52,8 +54,11 @@
         <img src="Images/1.jpeg" alt="">
         <div class="info">
           <div>
-            <h3>One of our greatest projects</h3>
-            <h5>Something Something Something Something</h5>
+            <h3>Seminars</h3>
+            <h5>CITS continues the legacy to provide knowledge to student alongside of entertainment. So every semester CITS arrange talks 
+              on different topics of CS field where platform is provided to students to get knowledge about field, interact with field 
+              experts and get to know roots and scope of fields. Sessions with developer of Facebook and Hult Prize are also arranged by 
+              CITS in past semesters. </h5>
           </div>
         </div>
       </div>
@@ -65,8 +70,10 @@
         <img src="Images/02.jpg" alt="">
         <div class="info">
           <div>
-            <h3>We also do interior designing</h3>
-            <h5>Something Something Something Something Something</h5>
+            <h3>Trips</h3>
+            <h5>Another source of entertainment which CITS provide are trips which are being arranged by CITS every semester. Trips to 
+              northern areas of Pakistan to Qila Rohtas, every semester CITS try to pitch a beautiful destination to student and affordable 
+              package of 1 day trip. And guess what? Members of CITS get 10% discount to these trips too.</h5>
           </div>
         </div>
       </div>

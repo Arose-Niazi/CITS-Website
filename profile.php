@@ -24,7 +24,9 @@
 				$RankDisplay = $row["RankDisplay"];
 				$Contact = $row["Contact"];
 				$Rank = $row["Rank"];
-				$Email = $row["Email"];
+                $Email = $row["Email"];
+                $Img = $row['Image'];
+                $Joined = $row['Joined'];
 				$result->close();		
 			}
 			else
@@ -85,7 +87,7 @@
         <!--Image and Info-->
         <div class="row part">
             <div class="col-md-5">
-                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID?>.png"/>
+                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID.$Img?>.jpg"/>
             </div>
             <div class="col-md-7">
                 <div class="grid-container">
@@ -99,6 +101,8 @@
                     <div class="grid-item"><?php echo $Contact?></div>
                     <div class="grid-item q">Email: </div>
                     <div class="grid-item"><?php echo $Email?></div>
+                    <div class="grid-item q">Joined: </div>
+                    <div class="grid-item"><?php echo $Joined?></div>
                 </div>
             </div>
         </div>
@@ -149,7 +153,7 @@
             <!--Edit-->
             <div class="col-md-4">
                 <div class="btns">
-                    <div class="edit"><a href="profileUpdate.html">Edit Profile</a></div>
+                    <div class="edit"><a href="profileUpdate.php">Edit Profile</a></div>
                     <!--<div class="edit">Request Card</div>
                     <div class="edit">Submit Time Table</div> -->
 					<div class="edit"><a href="profile.php?logout=true">Logout</a></div>
