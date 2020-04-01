@@ -154,6 +154,7 @@
             <div class="col-md-4">
                 <div class="btns">
                     <div class="edit"><a href="profileUpdate.php">Edit Profile</a></div>
+                    <?php if($Rank >= 7 || $RankDisplay == "Registration Head") echo '<div class="edit"><a href="addMember.php">Add Member</a></div>'?>
                     <!--<div class="edit">Request Card</div>
                     <div class="edit">Submit Time Table</div> -->
 					<div class="edit"><a href="profile.php?logout=true">Logout</a></div>
