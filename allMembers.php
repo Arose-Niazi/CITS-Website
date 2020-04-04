@@ -1,11 +1,11 @@
 <?php
 	session_start();
 	
-	/*if(!isset($_SESSION["LoggedIn"]) || $_SESSION["LoggedIn"] === false)
+	if(!isset($_SESSION["LoggedIn"]) || $_SESSION["LoggedIn"] === false)
 	{
 		header("location: login.php");
 		exit;
-	}*/
+	}
  ?>
 <!DOCTYPE html>
 
@@ -14,10 +14,31 @@
         include('includes/header.php');
         require_once('includes/connection.php');
 	?>
+
     <link rel="stylesheet" href="CSS/profile.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="CSS/profile.css">
+
+    <?php
+    $query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
+    if ($result = $mysqli->query($query)) 
+        if($row = $result->fetch_assoc())
+        {
+            $RankDisplay = $row["RankDisplay"];
+            $Rank = $row["Rank"];
+            $result->close();		
+        }
+        else
+            exit("No Data");
+    else
+        exit("Error!");
+
+    if($Rank < 7 && $RankDisplay != "Registration Head") 
+    {
+        exit("Permission Denied!");
+    }
+    ?>
     
     <script>
     $(function() {
