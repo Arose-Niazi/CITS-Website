@@ -16,24 +16,8 @@
         require_once('includes/functions.php');
 
         $ID = "SettingUp";
-        $query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
-		if ($result = $mysqli->query($query)) 
-			if($row = $result->fetch_assoc())
-			{
-				$ID = $row["ID"];
-				$Name = $row["Name"];
-				$RankDisplay = $row["RankDisplay"];
-				$Contact = $row["Contact"];
-				$Rank = $row["Rank"];
-                $Email = $row["Email"];
-                $About = $row['About'];
-                $Img = $row['Image'];
-				$result->close();		
-			}
-			else
-				exit;
-		else
-            exit;
+        $toLookID = $_SESSION["ID"];
+        include('includes/userData.php');
 
         if($_SERVER["REQUEST_METHOD"] == "POST")
         {
@@ -50,7 +34,7 @@
             }
             if(!empty(trim($_POST["about"]))){
                 $About = trim($_POST["about"]);
-                $query = $query.", About = '".$About."'";
+                $query = $query.", About = '".str_replace("'","\'",$About)."'";
             }
 
             if(!empty(trim($_POST["password"]))){

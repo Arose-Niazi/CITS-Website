@@ -15,26 +15,9 @@
 		require_once('includes/connection.php');
 		require_once('includes/functions.php');
 		
-		$query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
-		if ($result = $mysqli->query($query)) 
-			if($row = $result->fetch_assoc())
-			{
-				$ID = $row["ID"];
-				$Name = $row["Name"];
-				$RankDisplay = $row["RankDisplay"];
-				$Contact = $row["Contact"];
-				$Rank = $row["Rank"];
-                $Email = $row["Email"];
-                $Img = $row['Image'];
-                $Joined = $row['Joined'];
-				$result->close();		
-			}
-			else
-				exit;
-			
-		else
-            exit;
-            
+		$toLookID = $_SESSION["ID"];
+        include('includes/userData.php');
+
         $dutyDay = array();   
         $dutyHour = array();
         $dutyMin = array();
