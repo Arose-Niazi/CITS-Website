@@ -107,3 +107,17 @@ input, textarea, select{
     border-radius: 4px;
     background-color: white;
 }
+.search[type=text]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+.search[type=text]:focus {
+    width: 100%;
+  }

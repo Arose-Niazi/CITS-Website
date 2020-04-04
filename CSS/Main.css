@@ -142,7 +142,11 @@ div.polaroid {
     box-shadow: 0px 2px 8px 4px #96858F, 0px -2px 8px 4px #96858F;
     margin-bottom: 25px;
 }
-
+@media(max-width: 600px){
+    div.polaroid {
+        height: 31em;
+    }
+}
 .polaroid button {
     background-color: whitesmoke;
     border: 1px solid rgb(56,122,216);
