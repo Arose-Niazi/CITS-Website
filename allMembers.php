@@ -1,45 +1,65 @@
-
+<?php
+	session_start();
+	
+	/*if(!isset($_SESSION["LoggedIn"]) || $_SESSION["LoggedIn"] === false)
+	{
+		header("location: login.php");
+		exit;
+	}*/
+ ?>
 <!DOCTYPE html>
 
 <head>
 	<?php
-    	include('includes/header.php');
+        include('includes/header.php');
+        require_once('includes/connection.php');
 	?>
     <link rel="stylesheet" href="CSS/profile.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="CSS/profile.css">
+    
     <script>
-  $( function() {
+    $(function() {
     var nameRegs = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+        <?php 
+            $query = "SELECT ID FROM Members";
+		    if ($result = $mysqli->query($query)) 
+			while($row = $result->fetch_assoc())
+			{
+				echo '"'.$row["ID"].'",';
+			}
+		    else
+                exit;
+            echo '"FA18-BSE-010"';  
+            $result->close();	
+        ?>
     ];
     $( "#search" ).autocomplete({
       source: nameRegs
     });
   } );
   </script>
+    <?php
+
+        if($_SERVER["REQUEST_METHOD"] == "POST")
+        {
+            $temp = trim($_POST["search"]);
+            if(!empty($temp)){
+                if(!isset($_SESSION["WorkingOnID"]) || $_SESSION["WorkingOnID"] != $temp) 
+                {
+                    echo 'Searched Called';
+                    $_SESSION["WorkingOnID"] = $temp;
+                }
+                else 
+                {
+                    echo'Not Search Save Called';
+                    unset($_SESSION["WorkingOnID"]);
+                }
+            }
+            
+        } 
+    ?>
 </head>
 <!--Navbar-->
 <?php
@@ -59,7 +79,7 @@
             <div class="part">
                 <!--Search Bar-->
                 <div class="ui-widget">
-                    <input id="search" class="search" type="text" name="search" placeholder="Search..">
+                    <input id="search" class="search" type="text" name="search" placeholder="Search..." <?php if(isset($_SESSION["WorkingOnID"])) echo 'value="'.$_SESSION["WorkingOnID"].'"';?> >
                 </div>
                 <!--Image ^ Name ^ Reg No. ^ Password ^ About-->
                 <div class="row">
@@ -98,7 +118,7 @@
                             <input placeholder="Password" class="grid-item" type = "TEXT" name="password" pattern=".{6,32}" title="Your password should be more than 6 and less than 32 characters."></input>
                         </div>
                     </div>
-                    <button style="margin-top: 8em;" class="btn-sub allBtns" type="submit" value="Save">Save</button>
+                    <button style="margin-top: 8em;" class="btn-sub allBtns" type="submit" value="Save"><?php if(isset($_SESSION["WorkingOnID"])) echo 'Save'; else echo 'Search';?></button>
                 </div>
             </div>
         </form>  
