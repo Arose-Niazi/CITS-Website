@@ -73,7 +73,7 @@
             <h3>Trips</h3>
             <h5>Another source of entertainment which CITS provide are trips which are being arranged by CITS every semester. Trips to 
               northern areas of Pakistan to Qila Rohtas, every semester CITS try to pitch a beautiful destination to student and affordable 
-              package of 1 day trip. And guess what? Members of CITS get 10% discount to these trips too.</h5>
+              package of 1 day trip. And guess what? members of CITS get 10% discount to these trips too.</h5>
           </div>
         </div>
       </div>

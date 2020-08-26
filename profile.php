@@ -70,7 +70,7 @@
         <!--Image and Info-->
         <div class="row part">
             <div class="col-md-5">
-                <img class="person-img" src="Images/ImagesMembers/<?php echo $ID.$Img?>.jpg"/>
+                <img class="person-img" src="Images/Imagesmembers/<?php echo $ID.$Img?>.jpg"/>
             </div>
             <div class="col-md-7">
                 <div class="grid-container">

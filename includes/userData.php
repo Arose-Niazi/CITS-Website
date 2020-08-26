@@ -1,5 +1,5 @@
 <?php
-	$query = "SELECT * FROM Members WHERE ID = '".$toLookID."'";
+	$query = "SELECT * FROM members WHERE ID = '".$toLookID."'";
 	if ($result = $mysqli->query($query)) 
 		if($row = $result->fetch_assoc())
 		{

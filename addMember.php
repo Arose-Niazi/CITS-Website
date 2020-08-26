@@ -15,7 +15,7 @@
         include('includes/header.php');
         require_once('includes/connection.php');
 
-        $query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
+        $query = "SELECT * FROM members WHERE ID = '".$_SESSION["ID"]."'";
         if ($result = $mysqli->query($query)) 
 			if($row = $result->fetch_assoc())
 			{
@@ -48,7 +48,7 @@
                 $Img = -1;
                 
                
-                $query = "INSERT INTO Members(ID, Name, Password, Email, Joined, Contact, Rank, RankDisplay, Image, AddedBy) VALUES ('".$ID."','".$Name."','".$password."','".$Email."','".$Joined."','".$Contact."',".$Rank.",'".$RankDisplay."',0,'".$_SESSION["ID"]."')";
+                $query = "INSERT INTO members(ID, Name, Password, Email, Joined, Contact, Rank, RankDisplay, Image, AddedBy) VALUES ('".$ID."','".$Name."','".$password."','".$Email."','".$Joined."','".$Contact."',".$Rank.",'".$RankDisplay."',0,'".$_SESSION["ID"]."')";
 
                 $alertMessage= "";
                 $addedMember = false;

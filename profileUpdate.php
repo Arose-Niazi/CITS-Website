@@ -23,7 +23,7 @@
         {
             require_once('includes/uploadImage.php');
             
-            $query = "UPDATE Members SET Image = ".$Img;
+            $query = "UPDATE members SET Image = ".$Img;
             if(!empty(trim($_POST["contact"]))){
                 $Contact = trim($_POST["contact"]);
                 $query = $query.", Contact = '".$Contact."'";
@@ -71,7 +71,7 @@
         
         <div class="row part">
             <div class="col-md-5 ">
-                <div class="change"><img id="img" class="person-img" src="Images/ImagesMembers/<?php echo $ID.$Img;?>.jpg"/></div>
+                <div class="change"><img id="img" class="person-img" src="Images/Imagesmembers/<?php echo $ID.$Img;?>.jpg"/></div>
                 <input style="border: none" class="uploadImg" name="uploaded_file" id="file" type="file" accept="image/*">
             </div>
             <div class="col-md-7">

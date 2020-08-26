@@ -34,7 +34,7 @@
 			// Prepare a select statement
 			$password = hash('whirlpool', $password );
 			
-			$query = "SELECT * FROM Members WHERE ID = '".$ID."' AND Password = '".$password."' LIMIT 1";
+			$query = "SELECT * FROM members WHERE ID = '$ID' AND password = '$password' LIMIT 1";
 			if($result = mysqli_query($mysqli, $query))
 			{
 				if($result->num_rows == 1)

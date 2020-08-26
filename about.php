@@ -49,14 +49,14 @@
 		$rankDis = array();
 		$rankDis[0] = "Executive Committee";
 		$rankDis[1] = "Heads";
-		$rankDis[2] = "Members";
-		$rankDis[3] = "Ex-Members";
+		$rankDis[2] = "members";
+		$rankDis[3] = "Ex-members";
 		
 		
 		for($i = 1; $i<5; $i++)
 		{
 		
-			$query = "SELECT * FROM Members WHERE Rank > ".$rankChecks[$i]." AND Rank <= ".$rankChecks[$i-1]." ORDER BY Rank DESC";
+			$query = "SELECT * FROM members WHERE Rank > ".$rankChecks[$i]." AND Rank <= ".$rankChecks[$i-1]." ORDER BY Rank DESC";
 			if ($result = $mysqli->query($query)) 
 			if(mysqli_num_rows($result) > 0){
 				
@@ -82,7 +82,7 @@
 									echo '
 										<div class="col-md-6 col-sm-6">
 											<div data-aos="fade-up" class="block">
-												<center><img class="person" src="Images/ImagesMembers/'.$ID.$Img.'.jpg"></center>
+												<center><img class="person" src="Images/Imagesmembers/'.$ID.$Img.'.jpg"></center>
 												<p class="heading text-center" style="font-size: bolder">'.$Name.'</p>
 												<p class="post text-center">'.$RankDisplay.'</p>
 												<p class="description text-justify text-center">'.$About.'</p>

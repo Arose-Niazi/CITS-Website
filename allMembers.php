@@ -21,7 +21,7 @@
     <link href="CSS/profile.css">
 
     <?php
-    $query = "SELECT * FROM Members WHERE ID = '".$_SESSION["ID"]."'";
+    $query = "SELECT * FROM members WHERE ID = '".$_SESSION["ID"]."'";
     if ($result = $mysqli->query($query)) 
         if($row = $result->fetch_assoc())
         {
@@ -44,7 +44,7 @@
     $(function() {
     var nameRegs = [
         <?php 
-            $query = "SELECT ID FROM Members";
+            $query = "SELECT ID FROM members";
 		    if ($result = $mysqli->query($query)) 
 			while($row = $result->fetch_assoc())
 			{
@@ -78,7 +78,7 @@
                 {
                     require_once('includes/uploadImage.php');
             
-                    $query = "UPDATE Members SET Image = ".$Img;
+                    $query = "UPDATE members SET Image = ".$Img;
                     if(!empty(trim($_POST["name"]))){
                         $Name = trim($_POST["name"]);
                         $query = $query.", Name = '".$Name."'";
@@ -156,7 +156,7 @@
                 <!--Image ^ Name ^ Reg No. ^ Password ^ About-->
                 <div class="row">
                     <div class="col-md-5 ">
-                        <div class="change"><img id="img" class="person-img" src="Images/ImagesMembers/<?php if(isset($_SESSION["WorkingOnID"])) echo $ID.$Img; else echo 'NoImage'?>.jpg"/></div>
+                        <div class="change"><img id="img" class="person-img" src="Images/Imagesmembers/<?php if(isset($_SESSION["WorkingOnID"])) echo $ID.$Img; else echo 'NoImage'?>.jpg"/></div>
                         <input style="border: none" class="uploadImg" name="uploaded_file" id="file" type="file" accept="image/*">
                     </div>
                     <div class="col-md-7">
