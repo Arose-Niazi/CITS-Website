@@ -14,6 +14,7 @@
 	<?php
         include('includes/header.php');
         require_once('includes/connection.php');
+        require_once('includes/uploadImage.php');
 
         $query = "SELECT * FROM members WHERE ID = '".$_SESSION["ID"]."'";
         if ($result = $mysqli->query($query)) 
@@ -47,8 +48,7 @@
                 $RankDisplay = trim($_POST["RankDisplay"]);
                 $Img = -1;
                 
-               
-                $query = "INSERT INTO members(ID, Name, Password, Email, Joined, Contact, Rank, RankDisplay, Image, AddedBy) VALUES ('".$ID."','".$Name."','".$password."','".$Email."','".$Joined."','".$Contact."',".$Rank.",'".$RankDisplay."',0,'".$_SESSION["ID"]."')";
+                $query = "INSERT INTO members (ID, Name, Rank, RankDisplay, ContactNo, About, Joined, password, Image, AddedBy, Email) VALUE ('$ID','$Name', '$Rank', '$RankDisplay', '$Contact', NULL, '$Joined', '123456', 0, '".$_SESSION["ID"]."',  '$Email')";
 
                 $alertMessage= "";
                 $addedMember = false;
@@ -121,7 +121,7 @@
         </div>
         <!--Profile Photo-->
         <div class="grid-item"><span class="Q">Profile Photo : </span></div>
-        <input class="btn-prof" name="uploaded_file" id="file" type="file" accept="image/*">
+        <input style="border: none" class="uploadImg" name="uploaded_file" id="file" type="file" accept="image/*">
 
         <!--Submit Button-->
         <div class="grid-item"></div><button class="allBtns btn-sub"  type="submit">SUBMIT</button>

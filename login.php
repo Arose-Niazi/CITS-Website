@@ -32,7 +32,7 @@
 		// Validate credentials
 		if(empty($ID_err) && empty($password_err)){
 			// Prepare a select statement
-			$password = hash('whirlpool', $password );
+			//$password = hash('whirlpool', $password );
 			
 			$query = "SELECT * FROM members WHERE ID = '$ID' AND password = '$password' LIMIT 1";
 			if($result = mysqli_query($mysqli, $query))

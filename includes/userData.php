@@ -6,7 +6,7 @@
 			$ID = $row["ID"];
 			$Name = $row["Name"];
 			$RankDisplay = $row["RankDisplay"];
-			$Contact = $row["Contact"];
+			$Contact = $row["ContactNo"];
 			$Rank = $row["Rank"];
 			$Email = $row["Email"];
 			$About = $row['About'];
