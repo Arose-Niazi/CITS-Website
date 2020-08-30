@@ -48,7 +48,7 @@
                 $RankDisplay = trim($_POST["RankDisplay"]);
                 $Img = -1;
                 
-                $query = "INSERT INTO members (ID, Name, Rank, RankDisplay, ContactNo, About, Joined, password, Image, AddedBy, Email) VALUE ('$ID','$Name', '$Rank', '$RankDisplay', '$Contact', NULL, '$Joined', '123456', 0, '".$_SESSION["ID"]."',  '$Email')";
+                $query = "INSERT INTO members (ID, Name, Rank, RankDisplay, ContactNo, About, Joined, password, Image, AddedBy, Email) VALUE ('$ID','$Name', '$Rank', '$RankDisplay', '$Contact', NULL, '$Joined', '$password', 0, '".$_SESSION["ID"]."',  '$Email')";
 
                 $alertMessage= "";
                 $addedMember = false;

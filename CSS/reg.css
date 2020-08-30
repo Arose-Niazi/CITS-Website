@@ -22,7 +22,7 @@ input[type=text], select, input[type=number], textarea {
     opacity: 0.8;
 }
 .active{
-  color: rgb(55,116,201);
+  color: rgb(55,116,201)!important;
 }
 .btn-sub{
     position: relative;
@@ -34,6 +34,7 @@ input[type=text], select, input[type=number], textarea {
 .events{
     border-bottom: 1px solid rgba(0, 0, 0, 0.062);
     line-height: 2em;
+    color: black;
 }
 .req{
     color: red!important;

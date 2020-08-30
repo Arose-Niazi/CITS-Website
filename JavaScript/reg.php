@@ -1,4 +1,6 @@
 
+<script>
+
 function cod() {
     document.getElementById("eventForm").innerHTML = '<form autocomplete="off">'+
         //<!--Team name-->
@@ -29,7 +31,9 @@ function cod() {
         '<div class="grid-item"></div><button class="allBtns btn-sub">SUBMIT</button>'+
     '</form>';
     //document.getElementById("cod").style.color = "rgb(55,116,201)";
-}
+}  
+
+
 
 function fifa() {
     document.getElementById("eventForm").innerHTML = '<form autocomplete="off">'+
@@ -44,7 +48,7 @@ function fifa() {
         '<div class="grid-item"><input class="read" style="width: 20%; padding-left: 10px; padding-right: 10px;" type="text" name="code" value="+92" readonly> <input style="width: 79.2%" placeholder="000-0000000" TYPE="text" NAME="CONATCT" maxlength="11" pattern="\\d{3}[\\-]\\d{7}" required /></div>'+
         //<!--Submit Button-->
         '<div class="grid-item"></div><button class="allBtns btn-sub">SUBMIT</button>'+
-    '</form>';
+    '</form>'
     //document.getElementById("fifa").style.color = "rgb(55,116,201)";
 }
 
@@ -140,6 +144,7 @@ function party() {
         '<div class="grid-item"><input placeholder="AA00-BBB-000" TYPE="text" NAME="CONATCT" SIZE="30" maxlength="12" pattern="[A-Za-z][A-Za-z][0-9][0-9][\\-][A-Za-z][A-Za-z][A-Za-z][\\-][0-9][0-9][0-9]" required /></div>'+
         //<!--Submit Button-->
         '<div class="grid-item"></div><button class="allBtns btn-sub">SUBMIT</button>'+
-    '</form>';
+    '</form>'
     //document.getElementById("fifa").style.color = "rgb(55,116,201)";
 }
+
