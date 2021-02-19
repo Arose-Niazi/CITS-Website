@@ -14,7 +14,6 @@
 	<?php
         include('includes/header.php');
         require_once('includes/connection.php');
-        require_once('includes/uploadImage.php');
 
         $query = "SELECT * FROM members WHERE ID = '".$_SESSION["ID"]."'";
         if ($result = $mysqli->query($query)) 

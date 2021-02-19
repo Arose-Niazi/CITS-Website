@@ -26,7 +26,7 @@
             $query = "UPDATE members SET Image = ".$Img;
             if(!empty(trim($_POST["contact"]))){
                 $Contact = trim($_POST["contact"]);
-                $query = $query.", Contact = '".$Contact."'";
+                $query = $query.", ContactNo = '".$Contact."'";
             }
             if(!empty(trim($_POST["email"]))){
                 $Email = trim($_POST["email"]);
@@ -42,7 +42,7 @@
                 $password = hash('whirlpool', $password );
                 $query = $query.", Password = '".$password."'";
             }
-            $query = $query." WHERE ID = '".$ID."'";
+            $query = $query." WHERE ID = '$ID'";
 		    $mysqli->query($query); 
             
             header("location: profile.php");
