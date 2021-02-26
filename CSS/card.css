@@ -1,0 +1,36 @@
+.cardBox{
+    background-image: url('front.png');
+    background-size: cover;
+    height: 550px;
+    width: 341px;
+    position: absolute;
+}
+.person{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    position: relative;
+    top: 97px;
+    left: 103.5px;
+    z-index: -1;
+}
+.blue{
+    color: rgb(41, 106, 166);
+}
+.text{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+span{
+    font-size: 1.1em;
+}
+.bold{
+    font-weight: 900;
+}
+.larger{
+    font-size: 1.2em;
+}
+.largest{
+    font-size: 1.3em;
+}
